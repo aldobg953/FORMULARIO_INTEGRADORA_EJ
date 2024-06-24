@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/website/css/uicons-bold-rounded.css">
+
+    <script>
+        window.onload = function() {
+            var form = document.querySelector('form');
+            var passwordInput = document.querySelector('input[name="password"]');
+            form.addEventListener('submit', function(event) {
+                if (!passwordInput.validity.valid) {
+                    event.preventDefault();
+                    alert(passwordInput.title);
+                }
+            });
+        };
+    </script>
+
+</head>
+
+<body class="malla">
+    <center>
+        <header>
+            <nav>
+                <div class="return-home">
+                    <img src="resources/flecha-pequena-izquierda.svg" alt="">
+                    <p id="return-home-text">Regresar al inicio</p>
+                </div>
+            </nav>
+        </header>
+
+
+        <div class="tarjeta" id="sign-in"> <!--TARJETA DE INICIO DE SESION-->
+
+            <div id="logo-image"> <!--PARTE IZQUIERDA DE LA TARJETA DE INICIO DE SESION-->
+
+                <img id="logo-horizontal-image" src="resources/LogoLogoPathFinderHorizontal.svg" alt="" style="max-width:100%;height:auto;">
+
+                <hr>
+
+                <img id="image-login" src="resources/undraw_searching_re_3ra9.svg" alt="" style="max-width:60%;height:auto;">
+
+            </div>
+
+            <div id="sign-in-form"> <!--PARTE DERECHA DE LA TARJETA DE INICIO DE SESION-->
+
+                <div>
+                    <p id="welcome-title">¡Bienvenido!</p>
+                </div>
+
+                <div>
+                    <p id="sign-in-title">Iniciar sesión</p>
+                </div>
+
+                <hr>
+
+                <form action=""> <!--FORMULARIO-->
+
+                    <div class="input-group"> <!--INPUTS-->
+
+                        <input required="" type="email" name="email" autocomplete="off" class="input"
+                            placeholder="Nombre de usuario o correo">
+
+                        <div for="envelope icon">
+                            <i id="login-input-icon"  class="fi-rr-envelope"></i>
+                            
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="input-group">
+                        <input required="" type="password" name="password" autocomplete="off" class="input"
+                            placeholder="Ingresa tu contraseña"
+                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+       title="Debe contener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial."
+       aria-label="Por favor, introduce al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial.">
+
+                        <div for="name">
+                            <i id="login-input-icon"  class="fi-rr-lock"></i>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <button class="btn btn-primary"> <!--BOTON DE INICIO DE SESION-->
+                        <span class="btn-txt">Iniciar sesión</span>
+                    </button>
+
+                </form>
+
+                <hr>
+
+                <div class="create-account-message-login"> <!--MENSAJE DEBAJO DEL BOTON DE INICIO DE SESION-->
+                    <p id="create-account-message-login">¿No tienes una cuenta?
+                        <a href="https://translate.google.com.mx/?sl=es&tl=fr&op=translate"
+                            id="create-account-message-login">¡Crea una!<a />
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </center>
+
+</body>
+
+</html>
