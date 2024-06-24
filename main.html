@@ -8,19 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/website/css/uicons-bold-rounded.css">
 
-    <script>
-        window.onload = function() {
-            var form = document.querySelector('form');
-            var passwordInput = document.querySelector('input[name="password"]');
-            form.addEventListener('submit', function(event) {
-                if (!passwordInput.validity.valid) {
-                    event.preventDefault();
-                    alert(passwordInput.title);
-                }
-            });
-        };
-    </script>
-
 </head>
 
 <body class="malla">
@@ -64,7 +51,7 @@
                     <div class="input-group"> <!--INPUTS-->
 
                         <input required="" type="email" name="email" autocomplete="off" class="input"
-                            placeholder="Nombre de usuario o correo">
+                            placeholder="Ingresa tu correo electrónico">
 
                         <div for="envelope icon">
                             <i id="login-input-icon"  class="fi-rr-envelope"></i>
