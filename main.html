@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/website/css/uicons-bold-rounded.css">
 
 </head>
 
@@ -26,11 +25,13 @@
 
             <div id="logo-image"> <!--PARTE IZQUIERDA DE LA TARJETA DE INICIO DE SESION-->
 
-                <img id="logo-horizontal-image" src="resources/LogoLogoPathFinderHorizontal.svg" alt="" style="max-width:100%;height:auto;">
+                <img id="logo-horizontal-image" src="resources/LogoLogoPathFinderHorizontal.svg" alt=""
+                    style="max-width:100%;height:auto;">
 
                 <hr>
 
-                <img id="image-login" src="resources/undraw_searching_re_3ra9.svg" alt="" style="max-width:60%;height:auto;">
+                <img id="image-login" src="resources/undraw_searching_re_3ra9.svg" alt=""
+                    style="max-width:60%;height:auto;">
 
             </div>
 
@@ -50,13 +51,14 @@
 
                     <div class="input-group"> <!--INPUTS-->
 
-                        <input required="" type="email" name="email" autocomplete="off" class="input"
-                            placeholder="Ingresa tu correo electrónico">
+                        <input id="email" required="" type="email" name="email" autocomplete="off" class="input"
+                            placeholder="Ingresa tu correo electrónico" />
+                        <label for="email" class="email-label">                            
+                            <i id="login-input-icon" class="fi-rr-envelope"></i>
+                        </label>
+                        
 
-                        <div for="envelope icon">
-                            <i id="login-input-icon"  class="fi-rr-envelope"></i>
-                            
-                        </div>
+                       
 
                     </div>
 
@@ -64,13 +66,13 @@
 
                     <div class="input-group">
                         <input required="" type="password" name="password" autocomplete="off" class="input"
-                            placeholder="Ingresa tu contraseña"
-                            required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
-       title="Debe contener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial."
-       aria-label="Por favor, introduce al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial.">
+                            placeholder="Ingresa tu contraseña" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"
+                            title="Debe contener al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial."
+                            aria-label="Por favor, introduce al menos 8 caracteres, incluyendo una letra mayúscula, una letra minúscula y un carácter especial.">
 
                         <div for="name">
-                            <i id="login-input-icon"  class="fi-rr-lock"></i>
+                            <i id="login-input-icon" class="fi-rr-lock"></i>
                         </div>
 
                     </div>
